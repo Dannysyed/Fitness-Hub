@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    color: #333;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #ff5f6d;
+}
+
+/* Example transition for link hover effect */
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    /* Transition added */
+}
+
+.nav-links li a:hover {
+    color: #ff5f6d;
+}
+
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* Example animation for featured articles */
+.article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    /* Transition added */
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    /* Transformation added */
+}
+
+/* Additional styling for featured article content */
+.article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Additional animation for article text */
+.article:hover h3 {
+    color: #ff5f6d;
+    transition: color 0.3s ease-in-out;
+    /* Transition added */
+}
+
+
+/* Hero section */
+.hero {
+    background-image: url('img/index3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Example animation for the hero section */
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+    opacity: 0;
+    /* Initial state for animation */
+    animation: fadeInUp 1s forwards;
+    /* Animation added */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff5f6d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    /* Transition added */
+}
+
+
+
+.cta-button:hover {
+    background-color: #e64c58;
+    transform: scale(1.1);
+    /* Transformation added */
+}
+
+/* Featured section */
+.featured {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.featured-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.featured h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Workouts section */
+.workouts {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.workout-card li {
+    list-style: none;
+}
+
+.workouts h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.workout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.workout-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.workout-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.workout-card img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+/* Nutrition section */
+.nutrition {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.nutrition h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.nutrition-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.nutrition-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nutrition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nutrition-card img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Testimonial section */
+.testimonial {
+    background-color: #f6f6f6;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonial-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.user-review {
+    margin-bottom: 30px;
+}
+
+.user-review blockquote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.user-review cite {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #444;
+}
+
+.contact-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff5f6d;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-btn:hover {
+    background-color: #e64c58;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    color: #aaa;
+}
+
+/* Example hover effect for the testimonial cards */
+.user-review {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    /* Transition added */
+}
+
+.user-review:hover {
+    transform: translateY(-5px);
+    /* Transformation on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+    }
+
+    .featured h2,
+    .workouts h2,
+    .nutrition h2,
+    .testimonial h2 {
+        font-size: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .contact-form form {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+        gap: 10px;
+    }
+
+
+    .nav-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .featured-content {
+        padding: 40px 10px;
+    }
+
+    .featured h2,
+    .workouts h2,
+    .nutrition h2,
+    .testimonial h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .workout-card,
+    .nutrition-card {
+        padding: 15px;
+    }
+
+    .user-review blockquote {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .user-review cite {
+        font-size: 0.9rem;
+    }
+
+    .footer-section {
+        flex: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+}
+
+/* about.html */
+
+.gym-introduction {
+    background-image: url('img/hero_about.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply the fadeIn animation */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text within the container */
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+    }
+}
+
+.gym-introduction h1 {
+    font-size: 3em; /* Set the font size for h1 */
+    margin: 10px;
+}
+
+.gym-introduction p {
+    font-size: 1.2em; /* Set the font size for p */
+    margin: 10px;
+}
+
+.container_about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 28px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Left-align bullet points */
+.grid-item ul {
+    text-align: left;
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.trainers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Add gap for spacing between items */
+}
+
+/* Style for each trainer profile */
+.trainer-profile {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.trainer-profile img {
+    max-width: 100%;
+    height: auto;
+}
+
+.trainer-profile:hover {
+    transform: scale(1.05);
+}
+
+/* Media query for tablets (1024px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .trainers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media query for mobile devices (max-width: 767px) */
+@media (max-width: 767px) {
+    .trainers {
+        grid-template-columns: 1fr;
+    }
+}
+
